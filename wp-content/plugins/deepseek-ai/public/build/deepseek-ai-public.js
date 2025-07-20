@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=window.jQuery;new class{constructor(){this.init()}init(){e(document).ready(()=>{console.log("🚀 [ModuleA] Instance created, init() called."),this.events()})}events(){console.log("✨ [ModuleA] events() running"),this.sayHello("world")}sayHello(e){console.log(`👋 Hello, ${e}!`)}}})();

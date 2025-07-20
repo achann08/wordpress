@@ -1,0 +1,24 @@
+{
+  "name": "deepseek-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:public": "wp-scripts build public/js/deepseek-ai-public.js --output-path public/build --output-filename deepseek-ai-public.js",
+    "build:admin": "wp-scripts build admin/js/deepseek-ai-admin.js  --output-path admin/build  --output-filename deepseek-ai-admin.js",
+    "start:public": "wp-scripts start public/js/deepseek-ai-public.js --output-path public/build --output-filename deepseek-ai-public.js",
+    "start:admin": "wp-scripts start admin/js/deepseek-ai-admin.js  --output-path admin/build  --output-filename deepseek-ai-admin.js",
+    "start": "npm-run-all --parallel start:public start:admin",
+    "build": "npm run build:public && npm run build:admin"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@wordpress/scripts": "^30.19.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.89.2"
+  }
+}

@@ -1,0 +1,1 @@
+(()=>{"use strict";const o=window.jQuery;new function(){o(document).ready(()=>{console.log("hellow ooordl from admin"),console.log("test 2"),console.log("test 123")})}})();
